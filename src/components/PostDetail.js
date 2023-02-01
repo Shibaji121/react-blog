@@ -1,9 +1,9 @@
 function PostDetail() {
     return (
-      <div className="">
+      <div>
         PostDetail
       </div>
     );
   }
   
-  export default PostDetail;
+export default PostDetail;
