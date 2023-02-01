@@ -1,14 +1,17 @@
 import { Routes ,Route } from 'react-router-dom';
-import { Navbar, Home, PostDetail, CreatePost } from './';
+import Navbar from './Navbar';
+import Home from './Home';
+import PostDetail from './PostDetail';
+import CreatePost from './CreatePost';
 
 function App() {
   return (
     <div className="container">
       <Navbar />
       <Routes>
-        <Route path='/' component={<Home/>} />
-        <Route path='/post/:postId' component={<PostDetail/>} />
-        <Route path='/create-post' component={<CreatePost/>} />
+        <Route exact path='/' element={<Home/>} />
+        <Route exact path='/post/:postId' element={<PostDetail/>} />
+        <Route exact path='/create-post' element={<CreatePost/>} />
       </Routes>
     </div>
   );
